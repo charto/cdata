@@ -1,3 +1,6 @@
+// This file is part of cdata, copyright (c) 2017 BusFaster Ltd.
+// Released under the MIT license, see LICENSE.
+
 export interface HeapConfig<Item> {
 	getPos?: (item: Item) => number,
 	setPos?: (item: Item, pos: number) => void
@@ -48,16 +51,22 @@ export class BinaryHeap<Item> {
 		return(item);
 	};
 
+	/** Get the top item of the heap without removing it. */
+
+	peekTop() {
+		return(!this.last ? null : this.heap[0]);
+	}
+
 	/** Remove and return the top item of the heap. */
 
 	extractTop() {
 		if(!this.last) return(null);
 
-		const ret = this.heap[0];
+		const top = this.heap[0];
 
 		this.sink(this.heap[--this.last], 0);
 
-		return(ret);
+		return(top);
 	}
 
 	/** Move an item upwards in the heap, to its correct position.
