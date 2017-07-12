@@ -1,0 +1,24 @@
+{
+  "name": "cdata",
+  "version": "0.1.0",
+  "description": "Library of data structures",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "prepublish": "tsc -p src"
+  },
+  "author": "Juha Järvi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charto/cdata.git"
+  },
+  "bugs": {
+    "url": "https://github.com/charto/cdata/issues"
+  },
+  "homepage": "https://github.com/charto/cdata#readme",
+  "devDependencies": {
+    "typescript": "^2.4.1"
+  }
+}
