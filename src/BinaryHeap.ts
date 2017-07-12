@@ -22,6 +22,8 @@ export class BinaryHeap<Item> {
 		this.last = 0;
 	}
 
+	isEmpty() { return(!this.last); }
+
 	/** Insert a new item in the heap.
 	  * @return Index of the inserted item in the heap's internal array. */
 

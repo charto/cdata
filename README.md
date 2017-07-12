@@ -1,6 +1,7 @@
 cdata
 =====
 
+[![build status](https://travis-ci.org/charto/cdata.svg?branch=master)](http://travis-ci.org/charto/cdata)
 [![npm version](https://img.shields.io/npm/v/cdata.svg)](https://www.npmjs.com/package/cdata)
 
 This is a library of generic and efficient data structures written in TypeScript.
