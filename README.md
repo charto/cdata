@@ -19,4 +19,4 @@ License
 
 [The MIT License](https://raw.githubusercontent.com/charto/cdata/master/LICENSE)
 
-Copyright (c) 2017 BusFaster Ltd
+Copyright (c) 2017- BusFaster Ltd

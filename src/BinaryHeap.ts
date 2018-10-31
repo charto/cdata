@@ -1,4 +1,4 @@
-// This file is part of cdata, copyright (c) 2017 BusFaster Ltd.
+// This file is part of cdata, copyright (c) 2017- BusFaster Ltd.
 // Released under the MIT license, see LICENSE.
 
 export interface HeapConfig<Item> {
@@ -63,8 +63,12 @@ export class BinaryHeap<Item> {
 		if(!this.last) return(null);
 
 		const top = this.heap[0];
+		const bottom = this.heap[--this.last];
 
-		this.sink(this.heap[--this.last], 0);
+		// Erase last item.
+		this.heap[this.last] = void 0 as any;
+
+		this.sink(bottom, 0);
 
 		return(top);
 	}
